@@ -91,22 +91,42 @@ function getRandomInt(min, max) {
     //The maximum is exclusive and the minimum is inclusive
   }
 
-  userGuess = window.prompt("Guess a number between 1 and 10 ")
+//   userGuess = window.prompt("Guess a number between 1 and 10 ")
 
-  randomInteger = (getRandomInt(1,11))
+//   randomInteger = (getRandomInt(1,11))
 
-  console.log('--------------------');
+//   console.log('--------------------');
 
  
-if(userGuess == randomInteger){
-    document.getElementById("theanswer").innerHTML = "good guess , the number is " + randomInteger;
-} else{
-    document.getElementById("theanswer").innerHTML = "u lose! the number is actually " + randomInteger
-}
+// if(userGuess == randomInteger){
+//     document.getElementById("theanswer").innerHTML = "good guess , the number is " + randomInteger;
+// } else{
+//     document.getElementById("theanswer").innerHTML = "u lose! the number is actually " + randomInteger
+// }
     
-  
-  console.log(randomInteger)
+
+//   console.log(randomInteger)
 console.log('--------------------');
 
 
 // Write a JavaScript program to calculate multiplication and division of two numbers (input from user)
+
+function multNums(x, y) {
+
+    x = document.getElementById("number1").value;
+    y = document.getElementById("number2").value;
+   answer = x * y
+   document.getElementById("Danswer").innerHTML = answer
+   
+}
+
+function divNums(x, y) {
+
+    x = document.getElementById("number1").value;
+    y = document.getElementById("number2").value;
+   answer = x / y
+   document.getElementById("Danswer").innerHTML = answer
+   
+}
+
+
